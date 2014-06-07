@@ -2,6 +2,7 @@
 
 int_list = [-1, 0, 1, 2]
 str_list = ["Four", "score", "and", "seven", "years", "ago", "our", "forefathers", "brought", "forth", "on", "this", "continent"]
+unordered_ints = [5, 27, -1, 0, 23, -8, 2]
 
 # Write a function that takes a list and returns a new list with only the odd numbers.
 def all_odd(some_list):
@@ -33,11 +34,14 @@ def long_words(word_list):
     return new_list
     
 
-print long_words(str_list)
+#print long_words(str_list)
 
 # Write a function that finds the smallest element in a list of integers and returns it.
 def smallest(some_list):
-    return None
+    smallest = sorted(some_list)[0]
+    return smallest
+
+print smallest(unordered_ints)
 
 # Write a function that finds the largest element in a list of integers and returns it.
 def largest(some_list):
