@@ -1,14 +1,30 @@
 # Things you should be able to do.
 
+int_list = [-1, 0, 1, 2]
+str_list = ["Four", "score", "and", "seven", "years", "ago", "our", "forefathers", "brought", "forth", "on", "this", "continent"]
+
 # Write a function that takes a list and returns a new list with only the odd numbers.
 def all_odd(some_list):
-    return some_list[0::2]
+    new_list = []
+    for num in some_list:
+        if num % 2 == 1:
+            new_list.append(num)
+    return new_list
+
+#print all_odd(int_list)
 
 # Write a function that takes a list and returns a new list with only the even numbers.
 def all_even(some_list):
-    return []
+    new_list = []
+    for num in some_list:
+        if num % 2 == 0:
+            new_list.append(num)
+    return new_list
+    
 
-# Write a function that takes a list of strings and a new list with all strings of length 4 or greater.
+#print all_even(int_list)
+
+# Write a function that takes a list of strings and returns a new list with all strings of length 4 or greater.
 def long_words(word_list):
     return []
 
