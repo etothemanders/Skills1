@@ -1,9 +1,5 @@
 # Things you should be able to do.
 
-int_list = [-1, 0, 1, 2]
-str_list = ["Four", "score", "and", "seven", "years", "ago", "our", "forefathers", "brought", "forth", "on", "this", "continent"]
-unordered_ints = [5, 27, -1, 0, 23, -8, 2]
-
 # Write a function that takes a list and returns a new list with only the odd numbers.
 def all_odd(some_list):
     new_list = []
@@ -12,8 +8,6 @@ def all_odd(some_list):
             new_list.append(num)
     return new_list
 
-#print all_odd(int_list)
-
 # Write a function that takes a list and returns a new list with only the even numbers.
 def all_even(some_list):
     new_list = []
@@ -21,9 +15,6 @@ def all_even(some_list):
         if num % 2 == 0:
             new_list.append(num)
     return new_list
-    
-
-#print all_even(int_list)
 
 # Write a function that takes a list of strings and returns a new list with all strings of length 4 or greater.
 def long_words(word_list):
@@ -32,20 +23,17 @@ def long_words(word_list):
         if len(word) >= 4:
             new_list.append(word)
     return new_list
-    
 
-#print long_words(str_list)
 
 # Write a function that finds the smallest element in a list of integers and returns it.
 def smallest(some_list):
     smallest = sorted(some_list)[0]
     return smallest
 
-print smallest(unordered_ints)
-
 # Write a function that finds the largest element in a list of integers and returns it.
 def largest(some_list):
-    return None
+    largest = sorted(some_list)[-1]
+    return largest
 
 # Write a function that takes a list of numbers and returns a new list of all those numbers divided by two.
 def halvesies(some_list):
