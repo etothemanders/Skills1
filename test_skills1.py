@@ -7,6 +7,7 @@ class TestSkills1(unittest.TestCase):
         self.int_list = [-1, 0, 1, 2]
         self.str_list = ["Four", "score", "and", "seven", "years", "ago", "our", "forefathers", "brought", "forth", "on", "this", "continent"]
         self.unordered_ints = [5, 27, -1, 0, 23, -8, 2]
+        self.non_zero = [ -1, 1, 2, 3, 4, 5]
     
     def test_all_odd(self):
         self.assertEqual(skills1.all_odd(self.int_list), [-1, 1])
@@ -35,7 +36,7 @@ class TestSkills1(unittest.TestCase):
         self.assertEqual(skills1.sum_numbers(self.unordered_ints), 48)
         
     def test_mult_numbers(self):
-        pass
+        self.assertEqual(skills1.mult_numbers(self.non_zero), -120)
         
     def test_join_strings(self):
         pass

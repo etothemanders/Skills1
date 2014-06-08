@@ -52,7 +52,7 @@ def sum_numbers(numbers):
 
 # Write a function that multiplies all the numbers in a list together.
 def mult_numbers(numbers):
-    return []
+    return reduce(lambda x, y: x*y, numbers)
 
 # Write a function that joins all the strings in a list together (without using the join method) and returns a single string.
 def join_strings(string_list):
