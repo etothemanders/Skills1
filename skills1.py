@@ -41,7 +41,7 @@ def halvesies(some_list):
 
 # Write a function that takes a list of words and returns a list of all the lengths of those words.
 def word_lengths(word_list):
-    return []
+    return map(lambda x: len(x), word_list)
 
 # Write a function (using iteration) that sums all the numbers in a list.
 def sum_numbers(numbers):
