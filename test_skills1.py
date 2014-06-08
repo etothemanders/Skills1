@@ -24,7 +24,7 @@ class TestSkills1(unittest.TestCase):
         self.assertEqual(skills1.largest(self.int_list), 2)
     
     def test_halvesies(self):
-        pass
+        self.assertEqual(skills1.halvesies(self.int_list), [-1, 0, 0, 1])
         
     def test_word_lengths(self):
         pass

@@ -37,7 +37,7 @@ def largest(some_list):
 
 # Write a function that takes a list of numbers and returns a new list of all those numbers divided by two.
 def halvesies(some_list):
-    return []
+    return map(lambda x: x /2, some_list)
 
 # Write a function that takes a list of words and returns a list of all the lengths of those words.
 def word_lengths(word_list):
