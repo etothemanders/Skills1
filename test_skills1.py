@@ -31,7 +31,8 @@ class TestSkills1(unittest.TestCase):
         self.assertEqual(skills1.word_lengths(self.str_list), [4, 5, 3, 5, 5, 3, 3, 11, 7, 5, 2, 4, 9])
         
     def test_sum_numbers(self):
-        pass
+        self.assertEqual(skills1.sum_numbers(self.int_list), 2)
+        self.assertEqual(skills1.sum_numbers(self.unordered_ints), 48)
         
     def test_mult_numbers(self):
         pass
