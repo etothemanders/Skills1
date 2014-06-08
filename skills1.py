@@ -63,4 +63,4 @@ def join_strings(string_list):
 
 # Write a function that takes a list of integers and returns the average (without using the avg method)
 def average(numbers):
-    return None
+    return sum_numbers(numbers)/float(len(numbers))

@@ -42,7 +42,7 @@ class TestSkills1(unittest.TestCase):
         self.assertEqual(skills1.join_strings(self.str_list), "Fourscoreandsevenyearsagoourforefathersbroughtforthonthiscontinent")
         
     def test_average(self):
-        pass
+        self.assertEqual(skills1.average(self.non_zero), 2.3333333333333335)
         
     # no tearDown() method needed for this suite        
 
