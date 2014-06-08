@@ -39,7 +39,7 @@ class TestSkills1(unittest.TestCase):
         self.assertEqual(skills1.mult_numbers(self.non_zero), -120)
         
     def test_join_strings(self):
-        pass
+        self.assertEqual(skills1.join_strings(self.str_list), "Fourscoreandsevenyearsagoourforefathersbroughtforthonthiscontinent")
         
     def test_average(self):
         pass
